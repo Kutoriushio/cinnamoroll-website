@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../images/logo.png";
-import cartIcon from "../images/cart_icon.svg";
-import searchIcon from "../images/search_icon.svg";
+import logo from "../../images/logo.png";
+import cartIcon from "../../images/cart_icon.svg";
+import searchIcon from "../../images/search_icon.svg";
 import "./NavigationBar.css";
 
 export default function NavigationBar() {
@@ -11,10 +11,18 @@ export default function NavigationBar() {
         <img alt="logo" src={logo} />
       </div>
       <ul className="navigation-menu">
-        <li>Home</li>
-        <li>Shop</li>
-        <li>Recommanded</li>
-        <li>About</li>
+        <li>
+          <div>Home</div>
+        </li>
+        <li>
+          <div>About</div>
+        </li>
+        <li>
+          <div>Gallery</div>
+        </li>
+        <li>
+          <div>Shop</div>
+        </li>
       </ul>
       <div className="searchbar">
         <img className="search-icon" alt="search-icon" src={searchIcon} />
@@ -22,8 +30,8 @@ export default function NavigationBar() {
         <img className="cart-icon" alt="cart-icon" src={cartIcon} />
       </div>
       <div className="authentication">
-        <li>Sign up</li>
-        <li>Sign in</li>
+        <div className="button-sign">Sign up</div>
+        <div className="button-sign">Sign in</div>
       </div>
     </div>
   );

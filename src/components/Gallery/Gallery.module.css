@@ -1,0 +1,50 @@
+.gallery {
+    margin: 10rem 2rem 2rem;
+}
+
+.galleryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonSee {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.galleryImage {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+}
+
+.galleryImage img{
+    width: 25%;
+    border: 1px solid black;
+}
+
+.buttonGroup {
+    margin-top: 2rem;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+}
+
+.buttonLeft,
+.buttonRight {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonGroup img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.buttonRight {
+    transform: rotate(180deg);
+    margin-left: 2rem;
+}

@@ -1,24 +1,35 @@
 /* */
 .navigation {
     height: 8rem;
+    width: 100%;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     background-color: rgba(255, 179, 203, 0.6);
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
 .navigation-menu {
+    padding-left: 0;
     flex-grow: 1;
-    display: flex;
-    list-style-type: none;
+    margin-right: 2rem;
 }
 
 li {
-    margin-right: 3rem;
+    display: inline-block;
+}
+
+.navigation-menu li div {
+    padding: 0 15px;
+    font-size: 1rem;
 }
 
 /* inherit navigation's height */
 .logo {
     height: inherit;
+    margin-right: 2rem;
 }
 
 /* inherit navigation's height */
@@ -26,11 +37,6 @@ li {
     height: inherit;
 }
 
-
-.authentication {
-    display: flex;
-    list-style-type: none;
-}
 
 .searchbar {
     display: flex;
@@ -41,7 +47,7 @@ li {
 }
 
 .search-input {
-    width: 30rem;
+    width: 100%;
     padding: 0.5rem 1.5rem;
     margin-left: 10px;
 }
@@ -57,4 +63,15 @@ li {
     height: 1.5rem;
     width: 1.5rem;
     margin-left: 1rem;
+}
+
+.authentication {
+    display: flex;
+    list-style-type: none;
+}
+
+.button-sign{
+    margin-right: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
 }
