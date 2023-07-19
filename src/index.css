@@ -6,12 +6,14 @@ body {
   margin: 0;
   font-size: 1rem;
   overflow-x: hidden;
-  background-color: aliceblue;
+  background-color: aliceblue
 }
 
 .main-content{
   padding: 0 8rem;
   min-height: 100vh;
+  max-width: 2000px;
+  margin: auto;
 }
 
 /* To avoid other elements being covered by navigation bar */

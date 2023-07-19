@@ -1,6 +1,7 @@
 import Welcome from "./components/Welcome/Welcome";
 import NavigationBar from "./components/Navigation/NavigationBar";
 import Gallery from "./components/Gallery/Gallery";
+import Merchandise from "./components/Merchandise/Merchandise";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="main-content">
         <Welcome />
         <Gallery />
+        <Merchandise />
       </div>
     </div>
   );

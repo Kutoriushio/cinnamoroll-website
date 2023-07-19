@@ -17,7 +17,7 @@ export default function Welcome() {
           He works at café cinnamon, and sometimes sleeps on customers laps.
           Cinnamon's favorite food is warm, fresh cinnamon rolls.
         </p>
-        <div className="button">Check More</div>
+        <div className="button">Read More</div>
       </div>
       <img alt="welcome-img" src={introduction} />
     </div>

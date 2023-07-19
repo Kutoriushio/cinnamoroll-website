@@ -2,10 +2,11 @@
     width: 100%;
     height:auto;
     display: flex;
-    background-color: aliceblue;
+
+    margin-top: 2rem;
 }
 
-.welcome .welcome-content img{
+.welcome-content > img{
     height: inherit;
     flex-basis: 50%;
 }
