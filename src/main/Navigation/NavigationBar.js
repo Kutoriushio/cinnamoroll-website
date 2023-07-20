@@ -8,30 +8,38 @@ export default function NavigationBar() {
   return (
     <div className="navigation">
       <div className="logo">
-        <img alt="logo" src={logo} />
+        <a href="#">
+          <img alt="logo" src={logo} />
+        </a>
       </div>
       <ul className="navigation-menu">
         <li>
-          <div>Home</div>
+          <a href="#">Home</a>
         </li>
         <li>
-          <div>About</div>
+          <a href="#">About</a>
         </li>
         <li>
-          <div>Gallery</div>
+          <a href="#">Gallery</a>
         </li>
         <li>
-          <div>Shop</div>
+          <a href="#">Shop</a>
         </li>
       </ul>
       <div className="searchbar">
         <img className="search-icon" alt="search-icon" src={searchIcon} />
         <input className="search-input" placeholder="Search cinamoroll..." />
-        <img className="cart-icon" alt="cart-icon" src={cartIcon} />
+        <a href="#">
+          <img className="cart-icon" alt="cart-icon" src={cartIcon} />
+        </a>
       </div>
       <div className="authentication">
-        <div className="button-sign">Sign up</div>
-        <div className="button-sign">Sign in</div>
+        <a href="#">
+          <div className="button-sign">Sign up</div>
+        </a>
+        <a href="#">
+          <div className="button-sign">Sign in</div>
+        </a>
       </div>
     </div>
   );

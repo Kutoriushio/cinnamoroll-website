@@ -2,11 +2,19 @@
   box-sizing: border-box;
 }
 
+html {
+ font-size: 16px; 
+}
+
 body {
   margin: 0;
   font-size: 1rem;
   overflow-x: hidden;
-  background-color: aliceblue
+  background-color: #d0e9f0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-content{
@@ -19,4 +27,8 @@ body {
 /* To avoid other elements being covered by navigation bar */
 .navigation-placeholder {
   height: 8rem;
+}
+
+.footer {
+  margin-top: 4rem;
 }

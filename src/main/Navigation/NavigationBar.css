@@ -21,7 +21,7 @@ li {
     display: inline-block;
 }
 
-.navigation-menu li div {
+.navigation-menu li a {
     padding: 0 15px;
     font-size: 1rem;
 }
@@ -33,7 +33,8 @@ li {
 }
 
 /* inherit navigation's height */
-.navigation .logo img{
+.navigation .logo a,
+.navigation .logo a > img{
     height: inherit;
 }
 

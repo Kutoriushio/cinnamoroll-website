@@ -1,0 +1,66 @@
+.gallery {
+    margin: 3rem 0rem;
+    background-color: #f0f8ff;
+    padding: 2rem;
+    height: auto;
+}
+
+.galleryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.buttonSee {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.galleryImage {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.galleryImage>img{
+    max-width: 25%;
+    height: auto;
+    border: 1px solid black;    
+}
+
+.buttonGroup {
+    margin-top: 2rem;
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+}
+
+.buttonLeft,
+.buttonRight {
+    background-color: #cae4f4;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    cursor: pointer;
+    box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(0,0,0,0.25) 0px 0px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+}
+
+.buttonLeft:active,
+.buttonRight:active {
+    box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0) 0px 1px 0px, inset rgba(0,0,0,0.5) 0px 0px 5px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+}
+
+.buttonGroup img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.buttonRight {
+    transform: rotate(180deg);
+    margin-left: 2rem;
+}

@@ -38,15 +38,17 @@ export default function Merchandise() {
       <div className={styles.merchandiseItem}>
         {products.map((product, index) => (
           <div className={styles.merchandiseThumbnail}>
-            <div className={styles.merchandiseImage}>
+            <a href="#" className={styles.merchandiseImage}>
               <img
                 key={index}
                 src={product.imageUrl}
                 alt={`Product ${index + 1}`}
               />
-            </div>
+            </a>
             <div className={styles.productInfo}>
-              <div className={styles.productTitle}>{product.name} </div>
+              <a href="#" className={styles.productTitle}>
+                {product.name}
+              </a>
               <div className={styles.productPrice}>{product.price}</div>
             </div>
           </div>

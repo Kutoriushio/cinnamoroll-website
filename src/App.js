@@ -1,8 +1,8 @@
-import Welcome from "./components/Welcome/Welcome";
-import NavigationBar from "./components/Navigation/NavigationBar";
-import Gallery from "./components/Gallery/Gallery";
-import Merchandise from "./components/Merchandise/Merchandise";
-
+import Welcome from "./main/Welcome/Welcome";
+import NavigationBar from "./main/Navigation/NavigationBar";
+import Gallery from "./main/Gallery/Gallery";
+import Merchandise from "./main/Merchandise/Merchandise";
+import FootBar from "./main/FootBar/FootBar";
 function App() {
   return (
     <div className="App">
@@ -12,6 +12,9 @@ function App() {
         <Welcome />
         <Gallery />
         <Merchandise />
+      </div>
+      <div className="footer">
+        <FootBar />
       </div>
     </div>
   );
