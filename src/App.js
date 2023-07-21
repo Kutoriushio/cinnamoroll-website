@@ -6,7 +6,6 @@ import FootBar from "./main/FootBar/FootBar";
 function App() {
   return (
     <div className="App">
-      <div className="navigation-placeholder"> </div>
       <NavigationBar />
       <div className="main-content">
         <Welcome />

@@ -1,5 +1,5 @@
 .gallery {
-    margin: 3rem 0rem;
+    margin: 4rem 0rem;
     background-color: #f0f8ff;
     padding: 2rem;
     height: auto;
@@ -24,10 +24,37 @@
     overflow: hidden;
 }
 
-.galleryImage>img{
-    max-width: 25%;
-    height: auto;
-    border: 1px solid black;    
+.galleryImage > a {
+    width: 25%;
+    flex-shrink: 0;
+    animation: nextImg 10s linear infinite;
+}
+
+.galleryImage img{
+    width: 100%;
+    border: 1px solid black; 
+
+    height: 100%;
+}
+
+.galleryImage:hover>img{
+    animation-play-state: paused;
+}
+
+.galleryImage a > img:hover {
+    transform: scale(1.2); /* 图片放大效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+
+
+
+@keyframes nextImg {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-800%);
+    }
 }
 
 .buttonGroup {

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Gallery.module.css";
 import { useState } from "react";
 import leftIcon from "../../images/left_icon.svg";
 
 export default function Gallery() {
-  const [images, setImages] = useState([
+  // Need copy pictures to make it infinite loop
+  const images = [
     require("../../images/gallery1.jpg"),
     require("../../images/gallery2.jpg"),
     require("../../images/gallery3.jpg"),
@@ -13,19 +14,15 @@ export default function Gallery() {
     require("../../images/gallery6.jpg"),
     require("../../images/gallery7.jpg"),
     require("../../images/gallery8.png"),
-  ]);
-
-  function handleNextImage() {
-    const nextImages = images.slice(1);
-    setImages([...nextImages, images[0]]);
-  }
-
-  function handlePrevImage() {
-    const prevImages = images.slice();
-    prevImages.unshift(prevImages.pop());
-    console.log(prevImages);
-    setImages(prevImages);
-  }
+    require("../../images/gallery1.jpg"),
+    require("../../images/gallery2.jpg"),
+    require("../../images/gallery3.jpg"),
+    require("../../images/gallery4.jpg"),
+    require("../../images/gallery5.jpg"),
+    require("../../images/gallery6.jpg"),
+    require("../../images/gallery7.jpg"),
+    require("../../images/gallery8.png"),
+  ];
 
   return (
     <div className={styles.gallery}>
@@ -37,17 +34,19 @@ export default function Gallery() {
       </div>
       <div className={styles.galleryImage}>
         {images.map((imageUrl, index) => (
-          <img key={index} src={imageUrl} alt={`Gallery ${index + 1}`} />
+          <a href="#">
+            <img key={index} src={imageUrl} alt={`Gallery ${index + 1}`} />
+          </a>
         ))}
       </div>
-      <div className={styles.buttonGroup}>
-        <button className={styles.buttonLeft} onClick={handlePrevImage}>
-          <img src={leftIcon} alt="Left" />
+      {/* <div className={styles.buttonGroup}>
+        <button className={styles.buttonLeft}>
+          <img src={leftIcon} alt="Left" onClick={handleNextImg} />
         </button>
-        <button className={styles.buttonRight} onClick={handleNextImage}>
+        <button className={styles.buttonRight} onClick={handleNextImg}>
           <img src={leftIcon} alt="Right" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

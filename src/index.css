@@ -24,10 +24,6 @@ a {
   margin: auto;
 }
 
-/* To avoid other elements being covered by navigation bar */
-.navigation-placeholder {
-  height: 8rem;
-}
 
 .footer {
   margin-top: 4rem;

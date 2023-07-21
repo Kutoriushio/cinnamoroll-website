@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import logo from "../../images/logo.png";
 import cartIcon from "../../images/cart_icon.svg";
 import searchIcon from "../../images/search_icon.svg";
 import "./NavigationBar.css";
 
 export default function NavigationBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navigation">
+    <div className={`navigation ${isScrolled ? "is-nav-scrolled" : ""}`}>
       <div className="logo">
         <a href="#">
           <img alt="logo" src={logo} />

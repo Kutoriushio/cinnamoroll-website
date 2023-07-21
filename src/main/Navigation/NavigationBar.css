@@ -1,14 +1,31 @@
 /* */
 .navigation {
-    height: 8rem;
+    height: 6rem;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
     background-color: rgba(255, 179, 203, 0.6);
+    transform: translateY(0);
+    transition: transform 1s ease;
+}
+
+.is-nav-scrolled {
     position: fixed;
-    z-index: 100;
     top: 0;
+    background-color: rgb(255, 179, 203);
+    height: 4rem;
+    z-index: 100;
+    animation: scrollDown 0.3s ease-in 1 forwards;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .navigation-menu {
@@ -76,3 +93,4 @@ li {
     border: 1px solid black;
     padding: 1rem;
 }
+
