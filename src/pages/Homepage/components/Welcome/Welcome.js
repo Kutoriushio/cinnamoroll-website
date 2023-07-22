@@ -1,6 +1,7 @@
 import React from "react";
-import introduction from "../../images/introduction.png";
+import introduction from "../../../../images/introduction.png";
 import "./Welcome.css";
+import { Link } from "react-router-dom";
 
 export default function Welcome() {
   return (
@@ -17,9 +18,9 @@ export default function Welcome() {
           He works at café cinnamon, and sometimes sleeps on customers laps.
           Cinnamon's favorite food is warm, fresh cinnamon rolls.
         </p>
-        <a href="#">
+        <Link to="/introduce">
           <div className="button">Read More</div>
-        </a>
+        </Link>
       </div>
       <img alt="welcome-img" src={introduction} />
     </div>

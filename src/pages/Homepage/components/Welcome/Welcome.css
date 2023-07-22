@@ -2,12 +2,13 @@
     width: 100%;
     height:auto;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4rem;
     background-color: #f0f8ff;
+    overflow: hidden;
 }
 
 .welcome-content > img{
-    height: inherit;
+    height: auto;
     flex-basis: 50%;
 }
 

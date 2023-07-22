@@ -1,14 +1,23 @@
 /* */
+.placeholder{
+    height: 6rem;
+    width: 100%;
+    z-index: -100;
+}
+
+.hidden {
+    position: absolute;
+}
+
 .navigation {
     height: 6rem;
     width: 100%;
-    margin-bottom: 4rem;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 179, 203, 0.6);
-    transform: translateY(0);
-    transition: transform 1s ease;
+    background-color: rgba(255, 179, 203, 0.7);
+    overflow: hidden;
 }
+
 
 .is-nav-scrolled {
     position: fixed;
@@ -68,13 +77,14 @@ li {
     width: 100%;
     padding: 0.5rem 1.5rem;
     margin-left: 10px;
+    text-indent: 20px;
 }
 
 .search-icon {
     height: 1rem;
     width: 1rem;
     position: absolute;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .cart-icon {
@@ -91,6 +101,6 @@ li {
 .button-sign{
     margin-right: 1rem;
     border: 1px solid black;
-    padding: 1rem;
+    padding: 0.625rem;
 }
 

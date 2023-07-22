@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./FootBar.module.css";
-import footer from "../../images/footer.png";
-import logo from "../../images/logo.png";
+import footer from "../../../../images/footer.png";
+import logo from "../../../../images/logo.png";
 
 export default function FootBar() {
   return (
