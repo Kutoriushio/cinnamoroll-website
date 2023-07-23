@@ -4,6 +4,7 @@ import Home from "./pages/Homepage/HomePage";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import IntroducePage from "./pages/IntroducePage/IntoducePage";
 import ShopPage from "./pages/ShopPage/ShopPage";
+import FootBar from "./pages/Homepage/components/FootBar/FootBar";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/shop" element={<ShopPage />} />
       </Routes>
+      <div className="footer">
+        <FootBar />
+      </div>
     </div>
   );
 }

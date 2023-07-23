@@ -28,27 +28,28 @@
     justify-content: center;
 }
 .merchandiseImage > img {
-    height: 15rem;
-    width: auto;
-    padding: 10px 10px 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 0;
 }
 
 .productInfo {
     text-align: left;
-    padding: 9px 5px 0 8px;
+    padding: 9px 5px 0 1rem;
     min-height: 132px;
+    font-size: 1.1rem;
+
 }
 
 .productTitle {
     display: block;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 10px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
     min-height: 72px;
+    font-family: futura-pt;
 }
 
 .productPrice {
-    font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 700;
 }

@@ -6,12 +6,12 @@ export default function Merchandise() {
   // get products image and information
   const products = [
     {
-      name: "Loungefly x Cinnamoroll Mini Backpack",
+      name: 'Cinnamoroll 10" Angel Plush',
       imageUrl: require("../../../../images/product2.jpg"),
       price: "$80",
     },
     {
-      name: 'Cinnamoroll 10" Angel Plush',
+      name: "Loungefly x Cinnamoroll Mini Backpack",
       imageUrl: require("../../../../images/product1.jpg"),
       price: "$29",
     },

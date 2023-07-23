@@ -1,0 +1,15 @@
+.information {
+    margin-top: 4rem;
+    background-color: #f0f8ff;
+    overflow: hidden;
+}
+
+.information > h1 {
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.infoContent {
+    display: flex;
+    padding-left: 2rem;
+}

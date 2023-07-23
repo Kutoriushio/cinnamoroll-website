@@ -12,9 +12,6 @@ export default function Home() {
         <Gallery />
         <Merchandise />
       </div>
-      <div className="footer">
-        <FootBar />
-      </div>
     </>
   );
 }
