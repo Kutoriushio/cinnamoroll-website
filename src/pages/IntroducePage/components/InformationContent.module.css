@@ -1,0 +1,62 @@
+.contentTitle {
+    margin-top: 5rem;
+    border-bottom: 1px solid #c6c6c6;
+    overflow: auto;
+}
+
+.contentTitle > h2 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.originalImage {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.originalImage > img {
+    width: 100%;
+    height: 15rem;
+}
+
+.imageCaption {
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    width: 15rem;
+    line-height: 1rem;
+}
+
+.debutContent {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.debutImage {
+    display: flex;
+    width: 32rem; /* 15 * 2 + margin(2rem) */
+}
+
+.debutImage > img {
+    width: 15rem; /* two images */
+    margin-right: 2rem;
+}
+
+.content a {
+    color: #1E90FF;
+}
+
+.content a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.content li li {
+    list-style: disc;
+}

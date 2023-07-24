@@ -43,14 +43,17 @@
     margin-right: 2rem;
 }
 
-li {
+.navigation-menu li {
     display: inline-block;
-}
-
-.navigation-menu li a {
     padding: 0 15px;
     font-size: 1rem;
 }
+
+.navigation-menu li a:hover {
+    text-decoration: underline;
+    color: #2badde;
+}
+
 
 /* inherit navigation's height */
 .logo {

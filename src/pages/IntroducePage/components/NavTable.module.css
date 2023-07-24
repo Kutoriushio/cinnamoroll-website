@@ -1,0 +1,94 @@
+.navTable {
+    display: table;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    min-width: 15rem;
+}
+
+.navTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.navTitle > h2{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.toggleButton::before{
+    content: "[";
+}
+
+.toggleButton::after{
+    content: "]";
+}
+
+.toggleButton{
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggleButton>span:focus {
+    text-decoration: underline;
+}
+
+.navTitle > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.navList {
+    counter-reset: section-counter;
+    list-style: none;
+    padding: 0 1.5rem;
+
+}
+
+.navList li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.navList li div:hover,
+.nestList li:hover{
+    cursor: pointer;
+    background-color: rgb(162, 0, 147, 0.15);
+    color: #a20093;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.nestList {
+    counter-reset: subsection-counter;
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.navList>li div::before {
+    counter-increment: section-counter;
+    content: counter(section-counter)".";
+    padding-right: 1rem;
+}
+
+.nestList>li::before {
+    counter-increment: subsection-counter;
+    content: counter(section-counter) "." counter(subsection-counter) ".";
+    padding-right: 1rem;
+}
+
+.hidden {
+    display: none;
+}

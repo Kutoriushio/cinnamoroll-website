@@ -1,11 +1,20 @@
 .infoPara {
     line-height: 2rem;
-    font-size: 1.2rem;
-    text-align: justify;
-    min-width: 20rem;
-    flex-basis: 80%;
+    font-size: 1rem;
+    /* text-align: justify; */
+    /* min-width: 20rem; */
+    /* flex-basis: 80%; */
+    margin-right: 3rem;
 }
 
 .infoPara > p {
     margin: 0;
+}
+
+.inlineBold {
+    font-weight: 700;
+}
+
+.inlineItalic {
+    font-style: italic;
 }
