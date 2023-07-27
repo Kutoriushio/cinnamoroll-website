@@ -40,7 +40,7 @@ export default function Merchandise() {
       <div className={styles.merchandiseItem}>
         {products.map((product, index) => (
           <div className={styles.merchandiseThumbnail}>
-            <a href="#" className={styles.merchandiseImage}>
+            <a href="#" className={styles.merchandiseImage} key={index}>
               <img
                 key={index}
                 src={product.imageUrl}
@@ -48,7 +48,7 @@ export default function Merchandise() {
               />
             </a>
             <div className={styles.productInfo}>
-              <a href="#" className={styles.productTitle}>
+              <a href="#" className={styles.productTitle} key={index}>
                 {product.name}
               </a>
               <div className={styles.productPrice}>{product.price}</div>

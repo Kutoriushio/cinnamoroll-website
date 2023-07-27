@@ -19,10 +19,10 @@ export default function Gallery() {
     require("../../../../images/gallery2.jpg"),
     require("../../../../images/gallery3.jpg"),
     require("../../../../images/gallery4.jpg"),
-    require("../../../../images/gallery5.jpg"),
-    require("../../../../images/gallery6.jpg"),
-    require("../../../../images/gallery7.jpg"),
-    require("../../../../images/gallery8.png"),
+    // require("../../../../images/gallery5.jpg"),
+    // require("../../../../images/gallery6.jpg"),
+    // require("../../../../images/gallery7.jpg"),
+    // require("../../../../images/gallery8.png"),
   ];
 
   return (

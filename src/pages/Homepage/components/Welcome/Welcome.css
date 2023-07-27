@@ -16,6 +16,7 @@
     height: inherit;
     width: 100%;
     padding-left: 2rem;
+    padding-top: 2rem;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
