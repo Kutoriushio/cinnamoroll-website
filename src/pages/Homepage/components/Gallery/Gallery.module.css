@@ -28,7 +28,7 @@
     position: relative;
     width: 25%;
     flex-shrink: 0;
-    animation: nextImg 10s linear infinite;
+    animation: nextImg 12s linear infinite;
 }
 
 .galleryImage img{
@@ -57,7 +57,7 @@
     }
 }
 
-.buttonGroup {
+/* .buttonGroup {
     margin-top: 2rem;
     display: flex;
     height: 3.5rem;
@@ -90,4 +90,4 @@
 .buttonRight {
     transform: rotate(180deg);
     margin-left: 2rem;
-}
+} */
