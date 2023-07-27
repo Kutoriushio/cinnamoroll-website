@@ -25,6 +25,7 @@
 }
 
 .galleryImage > a {
+    position: relative;
     width: 25%;
     flex-shrink: 0;
     animation: nextImg 10s linear infinite;
@@ -33,15 +34,14 @@
 .galleryImage img{
     width: 100%;
     border: 1px solid black; 
-
     height: 100%;
 }
 
-.galleryImage:hover>a{
+.galleryImage:hover a{
     animation-play-state: paused;
 }
 
-.galleryImage a > img:hover {
+.galleryImage a img:hover {
     transform: scale(1.2); /* 图片放大效果 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
 }
@@ -50,10 +50,10 @@
 
 @keyframes nextImg {
     0% {
-        transform: translateX(0%);
+        left: 0%
     }
     100% {
-        transform: translateX(-800%);
+        left: -200%;
     }
 }
 

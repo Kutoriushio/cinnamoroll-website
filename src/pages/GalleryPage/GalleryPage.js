@@ -1,5 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function GalleryPage() {
-  return <h1>Gallery</h1>;
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:8080/gallery/all")
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error("Error", error));
+  }, []);
+
+  return;
 }
