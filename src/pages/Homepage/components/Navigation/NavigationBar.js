@@ -3,11 +3,13 @@ import { useState } from "react";
 import logo from "../../../../images/logo.png";
 import cartIcon from "../../../../images/cart_icon.svg";
 import searchIcon from "../../../../images/search_icon.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./NavigationBar.css";
 
 export default function NavigationBar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
   // check if the window is scrolled, if so, change the navigation bar
   useEffect(() => {
     const handleScroll = () => {
@@ -55,12 +57,16 @@ export default function NavigationBar() {
           </a>
         </div>
         <div className="authentication">
-          <a href="#">
-            <div className="button-sign">Sign up</div>
-          </a>
-          <a href="#">
-            <div className="button-sign">Sign in</div>
-          </a>
+          {currentPath !== "/login" && (
+            <Link to="/login">
+              <div className="button-sign">Sign in</div>
+            </Link>
+          )}
+          {currentPath !== "/register" && (
+            <Link to="/register">
+              <div className="button-sign">Sign up</div>
+            </Link>
+          )}
         </div>
       </div>
     </>

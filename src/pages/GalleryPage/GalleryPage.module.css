@@ -30,7 +30,7 @@
 }
 
 .galleryTitle > button:active {
-    box-shadow:0 1.5px #40b4e2;
+    box-shadow:0 1.5px rgba(95,182,221,0.6);
     transform:translateY(1.5px);
 }
 

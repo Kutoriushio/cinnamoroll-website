@@ -1,6 +1,6 @@
 /* */
 .placeholder{
-    height: 6rem;
+    height: 3rem;
     width: 100%;
     z-index: -100;
 }
@@ -10,7 +10,7 @@
 }
 
 .navigation {
-    height: 6rem;
+    height: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     position: fixed;
     top: 0;
     background-color: rgb(255, 179, 203);
-    height: 4rem;
+    height: 3rem;
     z-index: 100;
     animation: scrollDown 0.3s ease-in 1 forwards;
 }
@@ -57,7 +57,7 @@
 
 /* inherit navigation's height */
 .logo {
-    height: inherit;
+    height: 6rem;
     margin-right: 2rem;
 }
 
@@ -91,9 +91,13 @@
 }
 
 .cart-icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
     margin-left: 1rem;
+}
+
+.cart-icon:hover {
+    background-color: rgba(255, 179, 203, 0.5)
 }
 
 .authentication {
@@ -102,8 +106,14 @@
 }
 
 .button-sign{
+    display: flex;
+    width: 5rem;
     margin-right: 1rem;
-    border: 1px solid black;
     padding: 0.625rem;
+    justify-content: center;
+}
+
+.button-sign:hover {
+    background-color: #d1eefc;
 }
 
