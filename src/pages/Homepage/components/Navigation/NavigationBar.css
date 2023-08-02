@@ -1,6 +1,7 @@
 /* */
 .placeholder{
-    height: 3rem;
+    height: 3.5rem;
+    padding: 0 3rem;
     width: 100%;
     z-index: -100;
 }
@@ -10,12 +11,13 @@
 }
 
 .navigation {
-    height: 3rem;
+    height: 3.5rem;
+    padding: 0 1rem;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: rgba(255, 179, 203, 0.7);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -41,6 +43,7 @@
     padding-left: 0;
     flex-grow: 1;
     margin-right: 2rem;
+    /* overflow: hidden; */
 }
 
 .navigation-menu li {

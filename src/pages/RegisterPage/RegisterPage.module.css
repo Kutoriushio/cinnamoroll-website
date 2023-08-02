@@ -1,0 +1,68 @@
+.content {
+    width: 100%;
+    min-height: 75vh;
+    position: relative;
+    padding: 0 8rem;
+    display: flex;
+}
+
+.register {
+    margin-top: 3rem;
+    width: 37.5rem;
+    height: auto;
+}
+
+.register > h1 {
+    margin-bottom: 4rem;
+    color: #2d2a26;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerLabel {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.registerInput {
+    margin-bottom: 0.5rem;
+    height: 3rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.registerSubmit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.registerButton {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.register p {
+    font-size: 0.1rem;
+    margin: 0;
+}
+
+.register > p {
+    margin-top: 1rem;
+}
+
+.link {
+    margin-left: 0.3rem;
+}
+.link:hover {
+    background-color: #bde6f1;
+
+}

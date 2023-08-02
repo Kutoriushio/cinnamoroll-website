@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styles from "./GalleryPage.module.css";
+import axios from "axios";
 
 export default function GalleryPage() {
   const [data, setData] = useState([]);
   const url = "https://d10wfvpnh9c4my.cloudfront.net/images/gallery/";
 
   useEffect(() => {
-    fetch("http://localhost:8080/gallery/all")
-      .then((response) => response.json())
-      .then((data) => setData(data))
+    axios
+      .get("http://localhost:8080/gallery/all")
+      .then((response) => setData(response.data))
       .catch((error) => console.error("Error", error));
 
     window.scrollTo(0, 0);

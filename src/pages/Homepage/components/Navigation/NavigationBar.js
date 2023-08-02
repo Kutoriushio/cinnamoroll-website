@@ -5,10 +5,15 @@ import cartIcon from "../../../../images/cart_icon.svg";
 import searchIcon from "../../../../images/search_icon.svg";
 import { Link, useLocation } from "react-router-dom";
 import "./NavigationBar.css";
+import { useAuth } from "../../../../context/AuthContext";
+import UserAvatar from "./UserAvatar";
 
 export default function NavigationBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  // get global loggedin status to render different components
+  const { loggedIn } = useAuth();
+
   const currentPath = location.pathname;
   // check if the window is scrolled, if so, change the navigation bar
   useEffect(() => {
@@ -56,18 +61,22 @@ export default function NavigationBar() {
             <img className="cart-icon" alt="cart-icon" src={cartIcon} />
           </a>
         </div>
-        <div className="authentication">
-          {currentPath !== "/login" && (
-            <Link to="/login">
-              <div className="button-sign">Sign in</div>
-            </Link>
-          )}
-          {currentPath !== "/register" && (
-            <Link to="/register">
-              <div className="button-sign">Sign up</div>
-            </Link>
-          )}
-        </div>
+        {loggedIn ? (
+          <UserAvatar />
+        ) : (
+          <div className="authentication">
+            {currentPath !== "/login" && (
+              <Link to="/login">
+                <div className="button-sign">Sign in</div>
+              </Link>
+            )}
+            {currentPath !== "/register" && (
+              <Link to="/register">
+                <div className="button-sign">Sign up</div>
+              </Link>
+            )}
+          </div>
+        )}
       </div>
     </>
   );
